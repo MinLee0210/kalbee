@@ -1,7 +1,7 @@
 # kalbee 🐝
 
 <div align="center">
-  <img src="docs/kalbee.png" alt="kalbee logo" width="300"/>
+  <img src="https://raw.githubusercontent.com/MinLee0210/kalbee/main/docs/kalbee.png" alt="kalbee logo" width="300"/>
 </div>
 
 <br>
