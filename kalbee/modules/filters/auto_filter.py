@@ -2,6 +2,7 @@ from kalbee.modules.filters.base import BaseFilter
 from kalbee.modules.filters.kf_filter import KalmanFilter
 from kalbee.modules.filters.abg_filter import AlphaBetaGammaFilter
 from kalbee.modules.filters.ekf_filter import ExtendedKalmanFilter
+from kalbee.modules.filters.ukf_filter import UnscentedKalmanFilter
 
 
 class AutoFilter:
@@ -40,7 +41,10 @@ class AutoFilter:
         elif mode_clean in ["alphabetagamma", "abg"]:
             return AlphaBetaGammaFilter(*args, **kwargs)
 
+        elif mode_clean in ["unscentedkalmanfilter", "ukf"]:
+            return UnscentedKalmanFilter(*args, **kwargs)
+
         else:
             raise ValueError(
-                f"Unknown filter mode: '{mode}'. Available modes: kalmanfilter, ekf, abg."
+                f"Unknown filter mode: '{mode}'. Available modes: kalmanfilter, ekf, ukf, abg."
             )
