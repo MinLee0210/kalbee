@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kalbee"
+version = "0.1.0"
+description = "A clean, modular Python implementation of Kalman Filters and estimation algorithms."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  {name = "Le Duc Minh", email = "minh.leduc.0210@gmail.com"}
+]
+maintainers = [
+  {name = "Le Duc Minh", email = "minh.leduc.0210@gmail.com"}
+]
+keywords = [
+  "kalman-filter",
+  "extended-kalman-filter",
+  "ekf",
+  "state-estimation",
+  "sensor-fusion",
+  "tracking",
+  "alpha-beta-gamma",
+  "robotics",
+  "signal-processing",
+  "python",
+]
+dependencies = [
+    "numpy>=1.24.4",
+    "pytest>=8.3.5",
+    "ruff>=0.14.13",
+    "scikit-learn>=1.3.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/MinLee0210/kalbee"
+Repository = "https://github.com/MinLee0210/kalbee"
